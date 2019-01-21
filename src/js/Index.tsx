@@ -7,14 +7,6 @@ import NotesPage from './pages/NotesPage';
 import SettingsPage from './pages/SettingsPage';
 import StatsPage from './pages/StatsPage';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-console.log('testing');
-
->>>>>>> dc510d6... ルーティングを導入
-=======
->>>>>>> e44cc5e... 音符の変数を用意
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
@@ -26,7 +18,3 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
