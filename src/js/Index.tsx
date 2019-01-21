@@ -7,6 +7,11 @@ import NotesPage from './pages/NotesPage';
 import SettingsPage from './pages/SettingsPage';
 import StatsPage from './pages/StatsPage';
 
+<<<<<<< HEAD
+=======
+console.log('testing');
+
+>>>>>>> dc510d6... ルーティングを導入
 ReactDOM.render(
   <BrowserRouter>
     <Switch>

@@ -1,5 +1,6 @@
 import * as React from 'react';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 
 interface IState {
@@ -103,6 +104,9 @@ export default class SplashPage extends React.Component<IProps, IState> {
 // import './App.css';
 
 // I should put an interface for this app???
+=======
+import { Link } from 'react-router-dom'
+>>>>>>> dc510d6... ルーティングを導入
 
 interface IState {
   userType: string,
@@ -113,13 +117,9 @@ interface IState {
   salary: number
 }
 
-interface IProps {
+interface IProps {}
 
-}
-
-
-export default class App extends React.Component<IProps, IState> {
-
+export default class SplashPage extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
     this.state = {
@@ -131,6 +131,7 @@ export default class App extends React.Component<IProps, IState> {
       salary: null
     };
 
+    console.log('SplashPage constructor')
     this.handleOnClick = this.handleOnClick.bind(this);
   }
 
@@ -146,22 +147,9 @@ export default class App extends React.Component<IProps, IState> {
     }
   }
 
-  showSomeJSX(): JSX.Element {
-    let famWord: string[] = ["Momma", "Papa", "Controller", "Soups"];
-    return (
-      <p>Hi {famWord[this.state.counter]}!!!</p>
-    );
-  }
-
-  showSomeOddJSX(): JSX.Element {
-    let famWord: string[] = ["Cool", "Alright", "GetUp", "GetDown"];
-    return (
-      <p>Hi {famWord[this.state.counter]}!!!</p>
-    );
-  }
-
   render() {
     return (
+<<<<<<< HEAD
       <div className="App">
         <header className="App-header">
           <p>
@@ -192,6 +180,18 @@ export default class App extends React.Component<IProps, IState> {
           </div>
         </header>
 >>>>>>> 0761dbc... もっと色々整理してみた
+=======
+      <div>
+        <div>
+          Icon here
+        </div>
+        <h2>Title here</h2>
+        <ul>
+          <li><Link to='/music-notes/'>Start</Link></li>
+          <li><Link to='/settings/'>Settings</Link></li>
+          <li><Link to='/stats/'>Stats</Link></li>
+        </ul>
+>>>>>>> dc510d6... ルーティングを導入
       </div>
     );
   }
