@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom'
-
+import { INote } from './../interfaces/INote'
 interface IState {
-  availableNotes: Array<string>
+  availableNotes: Array<INote>
 }
+
 interface IProps {}
 
 export default class SplashPage extends React.Component<IProps, IState> {
@@ -11,63 +12,231 @@ export default class SplashPage extends React.Component<IProps, IState> {
   // maybe make it so that there is an interface like:
   //    -Music note (a, b, c, etc)
   //    -Note type (natural, flat, sharp)
-  notesList: Array<string> = [
-    'Low B',
-    'Low B♭',
-    'Low C',
-    'Low C♭',
-    'Low C♯',
-    'Low D',
-    'Low D♭',
-    'Low D♯',
-    'Low E',
-    'Low E♭',
-    'Low E♯',
-    'Low F',
-    'Low F♭',
-    'Low F♯',
-    'G',
-    'G♭',
-    'G♯',
-    'A',
-    'A♭',
-    'A♯',
-    'B',
-    'B♭',
-    'B♯',
-    'C',
-    'C♭',
-    'C♯',
-    'D',
-    'D♭',
-    'D♯',
-    'E',
-    'E♭',
-    'E♯',
-    'F',
-    'F♭',
-    'F♯',
-    'High A',
-    'High A♭',
-    'High A♯',
-    'High B',
-    'High B♭',
-    'High B♯',
-    'High C',
-    'High C♭',
-    'High C♯',
-    'High D',
-    'High D♭',
-    'High D♯',
-    'High E',
-    'High E♭',
-    'High E♯',
-    'High F',
-    'High F♭',
-    'High F♯',
-    'High G',
-    'High G♭',
-    'High G♯'
+  notesList: Array<INote> = [
+    {
+      name: 'Low B',
+      isOn: true
+    },
+    {
+      name: 'Low B♭',
+      isOn: true
+    },
+    {
+      name: 'Low C',
+      isOn: true
+    },
+    {
+      name: 'Low C♭',
+      isOn: true
+    },
+    {
+      name: 'Low C♯',
+      isOn: true
+    },
+    {
+      name: 'Low D',
+      isOn: true
+    },
+    {
+      name: 'Low D♭',
+      isOn: true
+    },
+    {
+      name: 'Low D♯',
+      isOn: true
+    },
+    {
+      name: 'Low E',
+      isOn: true
+    },
+    {
+      name: 'Low E♭',
+      isOn: true
+    },
+    {
+      name: 'Low E♯',
+      isOn: true
+    },
+    {
+      name: 'Low F',
+      isOn: true
+    },
+    {
+      name: 'Low F♭',
+      isOn: true
+    },
+    {
+      name: 'Low F♯',
+      isOn: true
+    },
+    {
+      name: 'G',
+      isOn: true
+    },
+    {
+      name: 'G♭',
+      isOn: true
+    },
+    {
+      name: 'G♯',
+      isOn: true
+    },
+    {
+      name: 'A',
+      isOn: true
+    },
+    {
+      name: 'A♭',
+      isOn: true
+    },
+    {
+      name: 'A♯',
+      isOn: true
+    },
+    {
+      name: 'B',
+      isOn: true
+    },
+    {
+      name: 'B♭',
+      isOn: true
+    },
+    {
+      name: 'B♯',
+      isOn: true
+    },
+    {
+      name: 'C',
+      isOn: true
+    },
+    {
+      name: 'C♭',
+      isOn: true
+    },
+    {
+      name: 'C♯',
+      isOn: true
+    },
+    {
+      name: 'D',
+      isOn: true
+    },
+    {
+      name: 'D♭',
+      isOn: true
+    },
+    {
+      name: 'D♯',
+      isOn: true
+    },
+    {
+      name: 'E',
+      isOn: true
+    },
+    {
+      name: 'E♭',
+      isOn: true
+    },
+    {
+      name: 'E♯',
+      isOn: true
+    },
+    {
+      name: 'F',
+      isOn: true
+    },
+    {
+      name: 'F♭',
+      isOn: true
+    },
+    {
+      name: 'F♯',
+      isOn: true
+    },
+    {
+      name: 'High A',
+      isOn: true
+    },
+    {
+      name: 'High A♭',
+      isOn: true
+    },
+    {
+      name: 'High A♯',
+      isOn: true
+    },
+    {
+      name: 'High B',
+      isOn: true
+    },
+    {
+      name: 'High B♭',
+      isOn: true
+    },
+    {
+      name: 'High B♯',
+      isOn: true
+    },
+    {
+      name: 'High C',
+      isOn: true
+    },
+    {
+      name: 'High C♭',
+      isOn: true
+    },
+    {
+      name: 'High C♯',
+      isOn: true
+    },
+    {
+      name: 'High D',
+      isOn: true
+    },
+    {
+      name: 'High D♭',
+      isOn: true
+    },
+    {
+      name: 'High D♯',
+      isOn: true
+    },
+    {
+      name: 'High E',
+      isOn: true
+    },
+    {
+      name: 'High E♭',
+      isOn: true
+    },
+    {
+      name: 'High E♯',
+      isOn: true
+    },
+    {
+      name: 'High F',
+      isOn: true
+    },
+    {
+      name: 'High F♭',
+      isOn: true
+    },
+    {
+      name: 'High F♯',
+      isOn: true
+    },
+    {
+      name: 'High G',
+      isOn: true
+    },
+    {
+      name: 'High G♭',
+      isOn: true
+    },
+    {
+      name: 'High G♯',
+      isOn: true
+    }
   ];
 
   constructor(props: any) {
@@ -76,10 +245,11 @@ export default class SplashPage extends React.Component<IProps, IState> {
     this.state = {
       availableNotes: this.notesList
     }
+
+    console.log(this.notesList);
   }
 
   render() {
-  console.log(this.state);
     return (
       <div>
         <div>
@@ -94,7 +264,12 @@ export default class SplashPage extends React.Component<IProps, IState> {
               speed: 2
             }
           }}>Start Now</Link></li>
-          <li><Link to='/settings/'>Settings</Link></li>
+          <li><Link to={{
+            pathname: '/settings/',
+            state: {
+              notesList: this.state.availableNotes
+            }
+          }}>Settings</Link></li>
           <li><Link to='/stats/'>Stats</Link></li>
         </ul>
       </div>
