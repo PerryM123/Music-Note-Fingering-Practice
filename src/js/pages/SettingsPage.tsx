@@ -9,6 +9,7 @@ interface IProps {}
 export default class SettingsPage extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
+<<<<<<< HEAD
   }
 
   render() {
@@ -41,6 +42,8 @@ export default class SettingsPage extends React.Component<IProps, IState> {
     //   counter: 0,
     //   salary: null
     // };
+=======
+>>>>>>> e44cc5e... 音符の変数を用意
   }
 
 <<<<<<< HEAD

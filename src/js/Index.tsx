@@ -8,10 +8,13 @@ import SettingsPage from './pages/SettingsPage';
 import StatsPage from './pages/StatsPage';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 console.log('testing');
 
 >>>>>>> dc510d6... ルーティングを導入
+=======
+>>>>>>> e44cc5e... 音符の変数を用意
 ReactDOM.render(
   <BrowserRouter>
     <Switch>

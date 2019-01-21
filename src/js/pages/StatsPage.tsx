@@ -8,6 +8,7 @@ export default class StatsPage extends React.Component<IProps, IState> {
   constructor(props: any) {
     super(props);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     // this.state = {
     //   userType: null,
@@ -18,6 +19,8 @@ export default class StatsPage extends React.Component<IProps, IState> {
     //   salary: null
     // };
 >>>>>>> dc510d6... ルーティングを導入
+=======
+>>>>>>> e44cc5e... 音符の変数を用意
   }
 
   render() {
