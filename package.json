@@ -19,7 +19,7 @@
     "chalk": "2.4.1",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "1.0.0",
-    "dotenv": "6.0.0",
+    "dotenv": "^6.2.0",
     "dotenv-expand": "4.2.0",
     "eslint": "5.6.0",
     "eslint-config-react-app": "^3.0.5",
@@ -67,7 +67,8 @@
     "test": "node scripts/test.js",
     "webpackbuild": "webpack --config webpack.config.js",
     "devlocal": "webpack-dev-server --hot --inline --mode development",
-    "perry-build": "webpack --mode production"
+    "perry-build": "webpack --mode production",
+    "release": "webpack --config webpackRelease.config.js"
   },
   "eslintConfig": {
     "extends": "react-app"

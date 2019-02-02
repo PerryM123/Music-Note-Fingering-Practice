@@ -246,10 +246,12 @@ export default class SplashPage extends React.Component<IProps, IState> {
       availableNotes: this.notesList
     }
 
-    console.log(this.notesList);
+        console.log(this.notesList);
   }
 
   render() {
+  console.log("pants1ssss11123");
+  console.log("process.env.TEST_WORD: ", process.env.TEST_WORD)
     return (
       <div>
         <div>

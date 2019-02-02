@@ -18,7 +18,6 @@ export default class SettingsPage extends React.Component<IProps & ILocationProp
   }
 
   musicNotesListDom(): JSX.Element {
-    console.log('musicNotesListDom')
     return this.props.location.state.notesList.map((noteIndex: INote, noteKey: number) => {
       return <li key={noteKey}><button>{noteIndex.name}</button></li>
     });
