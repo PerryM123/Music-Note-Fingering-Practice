@@ -63,7 +63,7 @@ module.exports = {
         }
       ], {
             copyUnmodified: true
-        }
+        },
+        new webpack.DefinePlugin(envKeys)
       )],
-      new webpack.DefinePlugin(envKeys)
 };
