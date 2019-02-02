@@ -68,7 +68,7 @@
     "webpackbuild": "webpack --config webpack.config.js",
     "devlocal": "webpack-dev-server --hot --inline --mode development",
     "perry-build": "webpack --mode production",
-    "release": "webpack --config webpackRelease.config.js"
+    "release": "webpack --env.PERRY=local --config webpackRelease.config.js"
   },
   "eslintConfig": {
     "extends": "react-app"

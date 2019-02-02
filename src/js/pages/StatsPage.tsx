@@ -16,7 +16,7 @@ export default class StatsPage extends React.Component<IProps, IState> {
         <p>How many times opened?<b>5 times</b></p>
         <p>Install date?<b>2019/1/22</b></p>
         <hr/>
-        <button><Link to='/'>Finish</Link></button>
+        <button><Link to={`${process.env.ROOT_URL}/`}>Finish</Link></button>
       </div>
     );
   }

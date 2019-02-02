@@ -31,7 +31,7 @@ export default class SettingsPage extends React.Component<IProps & ILocationProp
           {this.musicNotesListDom()}
         </ul>
         <hr/>
-        <button><Link to='/'>Finish</Link></button>
+        <button><Link to={`${process.env.ROOT_URL}/`}>Finish</Link></button>
       </div>
     );
   }

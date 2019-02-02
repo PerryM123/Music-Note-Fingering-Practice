@@ -3,8 +3,11 @@ const path = require('path');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 const dotenv = require('dotenv');
 
+
 // env setup
 const env = dotenv.config().parsed;
+
+// TODO: Fix webpack to have all in one file to handle between localhost build, release build, webpack dev server
 const envKeys = Object.keys(env).reduce((prev, next) => {
     prev[`process.env.${next}`] = JSON.stringify(env[next]);
     return prev;

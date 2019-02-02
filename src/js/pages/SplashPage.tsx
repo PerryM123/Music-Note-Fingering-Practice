@@ -260,19 +260,19 @@ export default class SplashPage extends React.Component<IProps, IState> {
         <h2>Title here</h2>
         <ul>
           <li><Link to={{
-            pathname: '/music-notes/',
+            pathname: `${process.env.ROOT_URL}/music-notes/`,
             state: {
               notesList: this.state.availableNotes,
               speed: 2
             }
           }}>Start Now</Link></li>
           <li><Link to={{
-            pathname: '/settings/',
+            pathname: `${process.env.ROOT_URL}/settings/`,
             state: {
               notesList: this.state.availableNotes
             }
           }}>Settings</Link></li>
-          <li><Link to='/stats/'>Stats</Link></li>
+          <li><Link to={`${process.env.ROOT_URL}/stats/`}>Stats</Link></li>
         </ul>
       </div>
     );

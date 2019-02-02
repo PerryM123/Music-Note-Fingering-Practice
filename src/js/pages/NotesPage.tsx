@@ -54,7 +54,7 @@ export default class NotesPage extends React.Component<IProps & ILocationProps, 
           <p>Speed: {speed} </p>
         </div>
         <hr/>
-        <button><Link to='/'>Finish</Link></button>
+        <button><Link to={`${process.env.ROOT_URL}/`}>Finish</Link></button>
       </div>
     );
   }

@@ -10,10 +10,10 @@ import StatsPage from './pages/StatsPage';
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route exact path='/' component={SplashPage}/>
-      <Route path='/music-notes/' component={NotesPage}/>
-      <Route path='/settings/' component={SettingsPage}/>
-      <Route path='/stats/' component={StatsPage}/>
+      <Route exact path={`${process.env.ROOT_URL}/`} component={SplashPage}/>
+      <Route path={`${process.env.ROOT_URL}/music-notes/`} component={NotesPage}/>
+      <Route path={`${process.env.ROOT_URL}/settings/`} component={SettingsPage}/>
+      <Route path={`${process.env.ROOT_URL}/stats/`} component={StatsPage}/>
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
