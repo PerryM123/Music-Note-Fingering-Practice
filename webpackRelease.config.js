@@ -8,6 +8,8 @@ const dotenv = require('dotenv');
 const env = dotenv.config().parsed;
 
 // TODO: Fix webpack to have all in one file to handle between localhost build, release build, webpack dev server
+
+env.ROOT_URL = "https://perrym123.github.io/Music-Note-Fingering-Practice/dist/"
 const envKeys = Object.keys(env).reduce((prev, next) => {
     prev[`process.env.${next}`] = JSON.stringify(env[next]);
     return prev;
